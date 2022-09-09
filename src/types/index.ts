@@ -1,5 +1,3 @@
-import Teacher from './teacher';
-
 export interface IUser {
   userID: string;
   firstName: string;
@@ -19,7 +17,7 @@ export interface IParent extends IUser {
   salutation?: string;
 }
 
-export interface ITeatcher extends IUser {
+export interface ITeacher extends IUser {
   salutation?: string;
 }
 
@@ -29,8 +27,8 @@ export enum MessageType {
 }
 
 export interface IMessage {
-  sender: IUser | IParent | ITeatcher;
-  receiver: IUser | IParent | ITeatcher;
+  sender: IUser | IParent | ITeacher;
+  receiver: IUser | IParent | ITeacher;
   text: string;
   createdAt: number;
   type: MessageType;

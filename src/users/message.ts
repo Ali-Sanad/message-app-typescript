@@ -1,13 +1,12 @@
-import {SYSTEM_AVATAR_URL} from '../utils/constants';
 import Parent from './parent';
 import Student from './student';
 import Teacher from './teacher';
-import {IMessage, IParent, ITeatcher, IUser, MessageType} from './types';
+import {IMessage, IParent, ITeacher, IUser, MessageType} from '../types';
 
 export default class Message implements IMessage {
   constructor(
-    public sender: IUser | IParent | ITeatcher,
-    public receiver: IUser | IParent | ITeatcher,
+    public sender: IUser | IParent | ITeacher,
+    public receiver: IUser | IParent | ITeacher,
     public text: string,
     public createdAt: number,
     public type: MessageType

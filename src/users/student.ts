@@ -1,5 +1,5 @@
 import User from './user';
-import {IStudent} from './types';
+import {IStudent} from '../types';
 import Teacher from './teacher';
 
 export default class Student extends User implements IStudent {

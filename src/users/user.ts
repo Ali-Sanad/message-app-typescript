@@ -1,5 +1,5 @@
 import {SYSTEM_AVATAR_URL} from '../utils/constants';
-import {IUser} from './types';
+import {IUser} from '../types';
 
 export default class User implements IUser {
   constructor(

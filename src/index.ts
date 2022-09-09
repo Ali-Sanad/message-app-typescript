@@ -1,6 +1,6 @@
+import {MessageType} from './types';
 import {Parent, Student, Teacher} from './users/index';
 import Message from './users/message';
-import {MessageType} from './users/types';
 import {generateID, generateUnixDate} from './utils/constants';
 
 const teacher = new Teacher(
@@ -45,5 +45,5 @@ const msg2 = new Message(
   MessageType.Manual
 );
 
-console.log(msg1.saveMessage());
-console.log(msg2.saveMessage());
+// console.log(msg1.saveMessage());
+// console.log(msg2.saveMessage());

@@ -1,7 +1,7 @@
 import User from './user';
-import {ITeatcher} from './types';
+import {ITeacher} from '../types';
 
-export default class Teacher extends User implements ITeatcher {
+export default class Teacher extends User implements ITeacher {
   constructor(
     userID: string,
     firstName: string,

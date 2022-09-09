@@ -1,5 +1,5 @@
 import User from './user';
-import {IParent} from './types';
+import {IParent} from '../types';
 import Teacher from './teacher';
 
 export default class Parent extends User implements IParent {
